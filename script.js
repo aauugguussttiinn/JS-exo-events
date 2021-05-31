@@ -51,3 +51,21 @@ function gettingred(){
 }
 
 // ------------------------------     Fonctionnalité 4     ------------------------------
+
+let secondCardEdit = document.querySelectorAll('div.album button')[3];
+
+secondCardEdit.addEventListener('click',gettinggreen);
+
+secondCardStatus = false
+
+function gettinggreen(){
+    if (secondCardStatus == false) {
+        secondCardEdit.style.color = 'green';
+        secondCardStatus = true;
+    } else if (secondCardStatus == true) {
+        secondCardEdit.style.color = '';
+        secondCardStatus = false;
+    }
+};
+
+// ------------------------------     Fonctionnalité 5     ------------------------------
