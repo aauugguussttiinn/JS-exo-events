@@ -31,7 +31,6 @@ let burgerStatus = false;
 burger.addEventListener('click',collapsing);
 
 function collapsing(){
-
     if (burgerStatus == false) {
         collapser.classList.remove('collapse');
         burgerStatus = true;
@@ -42,3 +41,13 @@ function collapsing(){
 };
 
 // ------------------------------     Fonctionnalité 3     ------------------------------
+
+let firstCardEdit = document.querySelectorAll('div.album button')[1];
+
+firstCardEdit.addEventListener('click',gettingred);
+
+function gettingred(){
+    firstCardEdit.style.color = 'red'
+}
+
+// ------------------------------     Fonctionnalité 4     ------------------------------
