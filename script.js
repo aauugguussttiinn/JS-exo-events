@@ -69,3 +69,23 @@ function gettinggreen(){
 };
 
 // ------------------------------     Fonctionnalité 5     ------------------------------
+
+let getNavBar = document.querySelector('header div.navbar');
+
+let bootstrapel = document.querySelector('link')
+
+let navbarStatus = false;
+
+getNavBar.addEventListener('dblclick',nuclear);
+
+function nuclear(){
+    if (navbarStatus == false) {
+        bootstrapel.href = '#'
+        navbarStatus = true;
+    } else if (navbarStatus == true) {
+        bootstrapel.href = 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css';
+        navbarStatus = false;
+    }
+};
+
+// ------------------------------     Fonctionnalité 6     ------------------------------
