@@ -113,3 +113,20 @@ anyCard.forEach(card => {
 })
 
 // ------------------------------     Fonctionnalité 7     ------------------------------
+
+
+let shufflebutton = document.querySelector('.btn-secondary');
+
+shufflebutton.addEventListener('click',shuffle);
+
+function shuffle() {
+    let allCards = document.querySelectorAll('div.col-md-4');
+    let lastCard = document.querySelectorAll('div.col-md-4')[5];
+    var parent = lastCard.parentNode;
+    console.log(parent)
+    console.log(allCards[0])
+    console.log(allCards[5])
+    parent.insertBefore(allCards[0], allCards[5])
+}
+
+// ------------------------------     Fonctionnalité 8     ------------------------------
