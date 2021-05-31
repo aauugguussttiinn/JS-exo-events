@@ -89,3 +89,27 @@ function nuclear(){
 };
 
 // ------------------------------     Fonctionnalité 6     ------------------------------
+
+let anyCard = document.querySelectorAll('div.card');
+
+let sizingStatus = false;
+
+anyCard.forEach(card => {
+    let btn = card.querySelector('.btn-success');
+    let img = card.querySelector('.card-img-top');
+    let txt = card.querySelector('.card-text')
+    btn.addEventListener('mouseover',sizing);
+    function sizing () {
+        if (sizingStatus == false) {
+            img.style.width = '20%';
+            txt.classList.add('d-none');
+            sizingStatus = true;
+        } else if (sizingStatus ==true) {
+            img.style.width = '100%';
+            txt.classList.remove('d-none');
+            sizingStatus = false;
+        }
+    }
+})
+
+// ------------------------------     Fonctionnalité 7     ------------------------------
