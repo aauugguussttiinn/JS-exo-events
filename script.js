@@ -16,8 +16,29 @@ footerclick.addEventListener('click',footerdisplay);
 let count = 0
 
 function footerdisplay(){
-    count ++
+    count ++;
     footerclick = console.log("Clic numéro " + count);
-}
+};
 
 // ------------------------------     Fonctionnalité 2     ------------------------------
+
+let collapser = document.getElementById('navbarHeader');
+
+let burger = document.querySelector('button.navbar-toggler');
+
+let burgerStatus = false;
+
+burger.addEventListener('click',collapsing);
+
+function collapsing(){
+
+    if (burgerStatus == false) {
+        collapser.classList.remove('collapse');
+        burgerStatus = true;
+    } else if (burgerStatus == true) {
+        collapser.classList.add('collapse');
+        burgerStatus = false;
+    }
+};
+
+// ------------------------------     Fonctionnalité 3     ------------------------------
